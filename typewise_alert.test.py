@@ -25,5 +25,6 @@ class TypewiseTest(unittest.TestCase):
         self.assertEqual(breach_type, 'TOO_HIGH')
         self.assertEqual(message, 'a.b@c.com, Hi, the temperature is too high')
 
- if __name__ == '__main__':
+ 
+if __name__ == '__main__':
     unittest.main()
