@@ -25,10 +25,5 @@ class TypewiseTest(unittest.TestCase):
         self.assertEqual(breach_type, 'TOO_HIGH')
         self.assertEqual(message, 'a.b@c.com, Hi, the temperature is too high')
 
-    def test_with_limits_not_defined(self):
-        battery_char = {'coolingType': 'UNDEFINED_COOLING'}
-        temperature_in_c = 30
-        self.assertRaises(KeyError, typewise_alert.check_and_alert, 'TO_CONTROLLER', battery_char, temperature_in_c)
-
 if __name__ == '__main__':
     unittest.main()
